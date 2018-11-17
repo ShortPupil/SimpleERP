@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" styleClass="background" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.mainui.LoginPageController">
+  <children>
+    <VBox alignment="CENTER" spacing="5.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+        <HBox id="HBox" alignment="CENTER" prefHeight="273.0" prefWidth="562.0" spacing="5.0">
+          <children>
+            <VBox id="VBox" alignment="CENTER" prefHeight="288.0" prefWidth="293.0" spacing="5.0">
+              <children>
+                <Label id="label1" text=" 进销存系统">
+                  <font>
+                    <Font name="STXingkai" size="34.0" />
+                  </font>
+                  <VBox.margin>
+                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" fx:id="x1" />
+                  </VBox.margin>
+                </Label>
+                <GridPane id="GridPane" prefHeight="210.0" prefWidth="277.0" VBox.margin="$x1">
+                  <children>
+                    <Label id="label3" prefHeight="14.0" prefWidth="55.0" text="账号" GridPane.columnIndex="0" GridPane.margin="$x1" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font size="19.0" />
+                                 </font></Label>
+                    <Label id="label4" text="密码" GridPane.columnIndex="0" GridPane.margin="$x1" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font size="19.0" />
+                                 </font></Label>
+                    <TextField id="textField2" fx:id="user" prefHeight="20.0" prefWidth="135.0" GridPane.columnIndex="1" GridPane.margin="$x1" GridPane.rowIndex="1" />
+                    <PasswordField id="passwordField1" fx:id="password" prefHeight="20.0" prefWidth="135.0" GridPane.columnIndex="1" GridPane.margin="$x1" GridPane.rowIndex="2" />
+                              <Label id="label3" layoutX="20.0" layoutY="66.0" prefHeight="15.0" prefWidth="66.0" text="  类型">
+                                 <font>
+                                    <Font size="19.0" />
+                                 </font></Label>
+                              <RadioButton fx:id="theuser" mnemonicParsing="false" text="用户" GridPane.columnIndex="1" />
+                              <RadioButton fx:id="theadministeror" layoutX="100.0" mnemonicParsing="false" text="管理员" translateX="70.0" GridPane.columnIndex="1" />
+                              <Hyperlink onAction="#forgetPassword" text="忘记密码？" translateX="10.0" translateY="30.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  </children>
+                  <columnConstraints>
+                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                  </columnConstraints>
+                  <rowConstraints>
+                    <RowConstraints maxHeight="104.0" minHeight="10.0" prefHeight="68.0" vgrow="SOMETIMES" />
+                    <RowConstraints maxHeight="76.0" minHeight="10.0" prefHeight="42.0" vgrow="SOMETIMES" />
+                    <RowConstraints maxHeight="75.0" minHeight="0.0" prefHeight="75.0" vgrow="SOMETIMES" />
+                  </rowConstraints>
+                </GridPane>
+              </children>
+            </VBox>
+          </children>
+        </HBox>
+    <Button id="button1" onAction="#loginFired" prefHeight="32.0" prefWidth="111.0" text="登录" VBox.margin="$x1" />
+            <Label id="label6" fx:id="message" opacity="0.0" text="Message" />
+      </children>
+    </VBox>
+    <Label id="label5" alignment="CENTER" contentDisplay="CENTER" text="Version: 1.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+    </Label>
+  </children>
+</AnchorPane>

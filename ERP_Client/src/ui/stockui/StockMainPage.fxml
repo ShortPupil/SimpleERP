@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" stylesheets="@../mainui/style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.stockui.StockMainPageController">
+  <children>
+    <AnchorPane id="anchorPane1" fx:id="titlepane" prefHeight="150.0" prefWidth="800.0" styleClass="titlePane" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+        <ImageView id="tju" fitHeight="122.0" fitWidth="125.0" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="15.0">
+          <image>
+            <Image url="@../mainui/timg.jpg" />
+          </image>
+        </ImageView>
+        <Label id="label1" styleClass="lightLabel" text="进销存系统" textFill="#1b1a1b" textOverrun="WORD_ELLIPSIS" AnchorPane.rightAnchor="35.0" AnchorPane.topAnchor="37.0">
+          <effect>
+            <DropShadow />
+          </effect>
+          <font>
+            <Font name="STXingkai" size="34.0" />
+          </font>
+        </Label>
+        <Label id="label2" styleClass="lightLabel" text="Version: 1.0" textFill="#433b3b" AnchorPane.rightAnchor="35.0" AnchorPane.topAnchor="100.0">
+          <effect>
+            <DropShadow />
+          </effect>
+        </Label>
+        <Label id="label3" fx:id="message" opacity="0.0" styleClass="lightLabel" text="Message" textFill="#b925b1" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="77.0" />
+      </children>
+      <effect>
+            <Blend mode="SRC_ATOP" />
+      </effect>
+    </AnchorPane>
+    <AnchorPane id="anchorPane2" fx:id="menupane" prefHeight="450.0" prefWidth="200.0" styleClass="menuPane" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="150.0">
+      <children>
+        <VBox id="VBox" alignment="CENTER" padding="$x1" prefHeight="361.0" prefWidth="146.0" spacing="5.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+          <children>
+            <Button id="button1" onAction="#customerBtnFired" prefHeight="50.0" prefWidth="150.0" text="顾客管理">
+              <VBox.margin>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" fx:id="x1" />
+              </VBox.margin>
+            </Button>
+            <Button id="button1" onAction="#classBtnFired" prefHeight="50.0" prefWidth="150.0" text="销售单" VBox.margin="$x1" />
+            <Button id="button1" onAction="#courseBtnFired" prefHeight="50.0" prefWidth="150.0" text="销售退货单" VBox.margin="$x1" />
+            <Button id="button1" onAction="#teacherBtnFired" prefHeight="50.0" prefWidth="150.0" text="进货单" VBox.margin="$x1" />
+            <Button id="button1" onAction="#takeCourseBtnFired" prefHeight="50.0" prefWidth="150.0" text="进货退货单" VBox.margin="$x1" />
+          </children>
+        </VBox>
+      </children>
+      <effect>
+        <DropShadow offsetX="1.0" offsetY="5.0" />
+      </effect>
+    </AnchorPane>
+    <AnchorPane id="anchorPane3" fx:id="central_panel" prefHeight="450.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="150.0" />
+  </children>
+</AnchorPane>
